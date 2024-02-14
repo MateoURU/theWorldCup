@@ -12,4 +12,71 @@
  *
  *= require_tree .
  *= require_self
+ *= require flag-icon
  */
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    margin-bottom: 10px;
+}
+
+.body {
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.line_match {
+
+}
+
+.navbar {
+    background-color: whitesmoke;
+    color: rgb(148 163 184);
+    font-weight: 800;
+    line-height: 3;
+    padding: 5px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+}
+
+/* Clear floats */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.middle_title {
+    color: rgb(148 163 184);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.winners {
+    color: black;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.h2 {
+
+}
